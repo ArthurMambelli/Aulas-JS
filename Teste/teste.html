@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Testes de Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      #text {
+        font-weight: bold;
+        color: blue;
+        text-decoration: underline;
+        font-family: arial;
+        font-size: 32px;
+      }
+      #confirmar {
+        background-color: green;
+        color: white;
+        width: 90px;
+        height: 30px;
+        border-radius: 10px;
+      }
+      #cancelar {
+        background-color: red;
+        color: white;
+        width: 90px;
+        height: 30px;
+        border-radius: 10px;
+      }
+      #limpar {
+        background-color: yellow;
+        color: black;
+        width: 90px;
+        height: 30px;
+        border-radius: 10px;
+      }
+      #imagem{
+        text-align: center;
+        cursor: pointer;
+      }
+      img {
+        width: 200px;
+      }
+      #text1{
+        color: red;
+        font-family: roboto;
+        text-align: center;
+        border: 48px solid purple;
+      }
+      
+    </style>
+    <script>
+    document.write("<p id='text1'>" + document.title + "</p>") 
+      </script>
+  </head>
+
+  <body>
+
+    <p id="text">Exercício 04</p>
+    <button id="confirmar" type="submit" onclick="alert('Confirmado!!')">
+      Confirmar
+    </button>
+    <button id="cancelar" type="button" onclick="alert('Cancelado!!')">
+      Cancelar
+    </button>
+    <button id="limpar" type="reset" onclick="alert('Limpo!')">Limpar</button>
+    <p id="imagem">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+        alt=""  onclick="alert('JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.')"
+      />
+    </p>
+    <button onclick="window.print()">Imprimir </button>
+  </body>
+</html>
