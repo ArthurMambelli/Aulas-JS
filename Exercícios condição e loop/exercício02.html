@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Notas escolares</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        var nome = prompt("Digite seu nome:")
+        var nota1 = parseFloat(prompt("Digite sua primeira nota: "))
+        var nota2 = parseFloat(prompt("Digite sua segunda nota: "))
+        var nota3 = parseFloat(prompt("Digite sua terceira nota: "))
+        var media = (nota1 + nota2 + nota3) / 3
+
+        document.write("<h1>", "Sistema de Notas", "</h1>")
+        document.write("<p>", "Aluno: ", nome, "</p>")
+        document.write("<p>", "Nota 1: ", nota1, "</p>")
+        document.write("<p>", "Nota 2: ", nota2, "</p>")
+        document.write("<p>", "Nota 3: ", nota3, "</p>")
+        document.write("<p>", "Média: ", media.toFixed(2))
+
+        if (media >= 7 && media <= 10) {
+            document.write("<h3>", "Aprovado!!", "</h3>")
+        } else if (media <= 5) {
+            document.write("<h4>", "Reprovado.", "</h4>")
+        } else if (media >= 5.1 && media <= 6.9) {
+            document.write("<h5>", "Recuperação...", "</h5>")
+        } else{
+            document.write("<p>", "Número inválido.", "</p>")
+        }
+    </script>
+
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        p{
+            font-weight: bold;
+        }
+
+        h3{
+            color: green;
+            font-size: 20px;
+        }
+
+        h4 {
+            color: red;
+            font-size: 20px;
+        }
+
+        h5{
+            font-size: 20px;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

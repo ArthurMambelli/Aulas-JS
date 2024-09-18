@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora de IMC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        peso = parseFloat(prompt("Digite seu peso em quilos: "))
+        altura = parseFloat(prompt("Digite sua altura: "))
+        imc = peso / (altura * altura)
+        if (imc < 17) {
+            document.write("<p>", "Seu IMC é de ", imc.toFixed(2), ". Portanto, está classificado como: MUITO ABAIXO DO PESO.", "</p>" )
+        } else if (imc >= 17 && imc < 18.5) {
+            document.write("<p>", "Seu IMC é de ", imc.toFixed(2), ". Portanto, está classificado como: ABAIXO DO PESO.", "</p>" )
+        } else if (imc >= 18.5 && imc < 25) {
+            document.write("<p>", "Seu IMC é de ", imc.toFixed(2), ". Portanto, está classificado como: PESO NORMAL", "</p>" )
+        } else if (imc >= 25 && imc < 30) {
+            document.write("<p>", "Seu IMC é de ", imc.toFixed(2), ". Portanto, está classificado como: ACIMA DO PESO", "</p>" )
+        } else if (imc >= 30 && imc < 35) {
+            document.write("<p>", "Seu IMC é de ", imc.toFixed(2), ". Portanto, está classificado como: OBESIDADE I", "</p>" )
+        } else if (imc >= 35 && imc < 40){
+            document.write("<p>", "Seu IMC é de ", imc.toFixed(2), ". Portanto, está classificado como: OBESIDADE II", "</p>" )
+        } else {
+            document.write("<p>", "Seu IMC é de ", imc.toFixed(2), ". Portanto, está classificado como: OBESIDADE III", "</p>" )
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
