@@ -13,11 +13,19 @@
 
         idadeVelho = anoatual - anovelho
         idadeNovo = anoatual - anonovo
-        difIdade = anovelho - anonovo
+        difIdade = anonovo - anovelho
 
-        document.write("<h1>", "A idade da pessoa mais velha é: ", idadeVelho, "<h1>")
-        document.write("<h1>", )
+        document.write("<h1>", "A idade da pessoa mais velha é: ", idadeVelho, " anos", "<h1>")
+        document.write("<h1>", "A idade da pessoa mais nova é: ", idadeNovo, " anos", "<h1>")
+        document.write("<h1>", "A diferença de idade entre as pessoas é de: ", difIdade, " anos", "<h1>" )
     </script>
+
+    <style>
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     

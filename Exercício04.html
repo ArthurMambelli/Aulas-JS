@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Morro Alto - Laranjas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        var segF = prompt("Digite a quantidade de laranjas colhidas na segunda-feira:")
+        var terF = prompt("Digite a quantidade de laranjas colhidas na terça-feira:")
+        var quaF = prompt("Digite a quantidade de laranjas colhidas na quarta-feira:")
+
+        segF = parseInt(segF)
+        terF = parseInt(terF)
+        quaF = parseInt(quaF)
+
+        total = segF + terF + quaF
+        media = (segF + terF + quaF) / 3
+        mediaArr = media.toFixed(0)
+        difMM = terF - quaF
+        
+        document.write("<h1>", "A colheita total nos 3 dias foi de: ", total, " laranjas", "<h1>" )
+        document.write("<h1>", "A média de colheita nos 3 dias foi de: ", mediaArr, " laranjas", "<h1>" )
+        document.write("<h1>", "A queda de produção entre terça-feira e quarta-feira foi de: ", difMM, " laranjas", "<h1>" )
+    </script>
+
+    <style>
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
