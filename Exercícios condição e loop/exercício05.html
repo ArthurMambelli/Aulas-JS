@@ -10,8 +10,11 @@
         num1 = parseFloat(prompt("Digite o primeiro número: "))        
         num2 = parseFloat(prompt("Digite o segundo número: "))        
         opc = parseFloat(prompt("Digite a operação (+, -, x, /, **): ")) 
-              
-
+            
+        switch(opc) {
+            case "+":
+                document.write("<p>", num1, " + ", num2, " = ", "</p>", "<h2>", num1 + num2, "</h2>")
+        }
     </script>
 </head>
 <body>
