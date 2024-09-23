@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SuperAçaiajin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/superacaiajin.css'>
+    <script src="_js/superacaiajin.js"></script>
+</head>
+
+<body>
+    <img src="_img/goku.png" alt="">
+    <table>
+        <tr>
+            <th>Tamanho</th>
+            <th>Preço</th>
+        </tr>
+
+        <tr>
+            <td>Pequeno (P)</td>
+            <td>R$10,00</td>
+        </tr>
+
+        <tr>
+            <td>Média (M)</td>
+            <td>R$15,00</td>
+        </tr>
+        <tr>
+            <td>Grande (G)</td>
+            <td>R$20,00</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <form id="form-tamanho">
+        <h3>Escolha o tamanho do açaí: </h3>
+        <input type="radio" name="tamanho" id="tamanho" value="P">
+        <label for="pequeno">Pequeno</label>
+
+        <input type="radio" name="tamanho" id="tamanho" value="M">
+        <label for="medio">Médio</label>
+
+        <input type="radio" name="tamanho" id="tamanho" value="G">
+        <label for="grande">Grande</label> 
+        <br>
+        <br>
+        <button type="button" onclick="confirmarESC()">Confirmar escolha</button>
+        <p id="par"></p>
+        <hr>
+    </form>
+
+    <form id="form-pagamento">
+        <h3>Escolha a forma de pagamento:</h3>
+        <input type="radio" name="pagamento" value="dinheiro" id="formapagamento">
+        <label for="dinheiro">Dinheiro</label>
+
+        <input type="radio" name="pagamento" value="cartao" id="formapagamento">
+        <label for="cartao">Cartão</label>
+        <br><br>
+        <button type="button" onclick="formpag()">Calcular preço</button>
+        <p id="pag"></p>
+        <hr>
+    </form>
+
+    <form id="form-troco">
+        <label for="valor" name="troco">Valor a ser pago:</label>
+        <input type="number" id="totalPago" onchange="calculoFin()" value="0">
+        <button type="button">Finalizar pagamento</button>
+        <p id="final"></p>
+    </form>
+
+    <form id="confirmpagm">
+        <button type="button" onclick="confirmpagm()">Confirmar pagamento</button>
+        <p id="confirmado"></p>
+    </form>
+</body>
+
+</html>

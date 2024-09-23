@@ -9,13 +9,49 @@
     <script>
         num1 = parseFloat(prompt("Digite o primeiro número: "))        
         num2 = parseFloat(prompt("Digite o segundo número: "))        
-        opc = parseFloat(prompt("Digite a operação (+, -, x, /, **): ")) 
+        opc = prompt("Digite a operação (+, -, x, /, **): ")
             
         switch(opc) {
             case "+":
-                document.write("<p>", num1, " + ", num2, " = ", "</p>", "<h2>", num1 + num2, "</h2>")
+                document.write("<p1>", "Operação: ", num1, " + ", num2, "</p1>", "<br>") 
+                document.write("<p2>", "Resultado da soma: ", num1 + num2, "</p2>")
+                break;
+            case "-":
+                document.write("<p1>", "Operação: ", num1, " - ", num2, "</p1>", "<br>") 
+                document.write("<p2>", "Resultado da subtração: ", num1 - num2, "</p2>")
+                break;
+            case "x":
+                document.write("<p1>", "Operação: ", num1, " x ", num2, "</p1>", "<br>") 
+                document.write("<p2>", "Resultado da multiplicação: ", num1 * num2, "</p2>")
+                break;
+            case "/":
+                document.write("<p1>", "Operação: ", num1, " / ", num2, "</p1>", "<br>") 
+                document.write("<p2>", "Resultado da divisão: ", num1 / num2, "</p2>")
+                break;
+            case "**":
+                document.write("<p1>", "Operação: ", num1, " ^ ", num2, "</p1>", "<br>") 
+                document.write("<p2>", "Resultado da potenciação: ", num1 ** num2, "</p2>")
+                break;
+            default:
+                document.write("Operação inválida.")
+                break;
         }
     </script>
+
+    <style>
+        p1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+        }
+        p2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>    
 </head>
 <body>
 

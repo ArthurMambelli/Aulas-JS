@@ -3,10 +3,79 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Semana</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script>
+        dia = parseInt(prompt("Digite um número de 1 a 7 para representar os dias da semana: "))
+        switch(dia) {
+            case 1:
+                document.write("<p1>", "Domingo", "</p1>")
+                break;
+            case 2:
+                document.write("<p2>", "Segunda-Feira", "</p2>")
+                break;
+            case 3:
+                document.write("<p3>", "Terça-Feira", "</p3>")
+                break;
+            case 4:
+                document.write("<p4>", "Quarta-Feira", "</p4>")
+                break;
+            case 5:
+                document.write("<p5>", "Quinta-Feira", "</p5>")
+                break;
+            case 6:
+                document.write("<p6>", "Sexta-Feira", "</p6>")
+                break;
+            case 7:
+                document.write("<p7>", "Sábado", "</p7>")
+                break;
+            default:
+                document.write("Número inválido.")
+                break;
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+        p1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            color: red;
+        }
+        p2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            color: violet;
+        }
+        p3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            color: brown;
+        }
+        p4 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            color: gray;
+        }
+        p5 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            color: blue;
+        }
+        p6 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            color: green;
+        }
+        p7 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            color: black;
+        }
+    </style>
 </head>
 <body>
     
