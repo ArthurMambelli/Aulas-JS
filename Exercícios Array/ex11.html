@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício 10</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        var numeros = [10, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300]
+        total = 0
+        numeros[2] = 80
+        for (i = 0; i < numeros.length; i++) {
+            document.write("<p>",i+1, ")", " ", numeros[i], "</p>")
+            total = total + numeros[i]
+        }
+        document.write("<p>"+ "A soma dos valores acima é de: " + total + "</p>")
+    </script>
+
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
