@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exemplo 05</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        let userName = "John";
+
+        function showMessage() {
+            let userName = "Bob"; // declare a local variable
+
+            let message = 'Hello, ' + userName; // Bob
+            alert(message);
+        }
+
+        // the function will create and use its own userName
+        showMessage(); 
+
+        alert(userName); // John, unchanged, the function did not acess the outer variable
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

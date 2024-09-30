@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exemplo 04</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        let userName = "John Lennon";
+        function showMessage() {
+            userName = "Bob Dylan"; // (1) Mudança do valor da variável
+            let message = 'Hello, ' + userName;
+            alert(message);
+        }
+        alert(userName); // John before the function call
+        showMessage(); 
+        alert(userName); // Bob, the value was modified by the function
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
