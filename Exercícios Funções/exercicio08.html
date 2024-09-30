@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Carteira de Habilitação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <script>
+        function categoriaHab(){
+            let nome = prompt("Digite seu nome: ")
+            let categoria = prompt("Digite a letra de sua carteira de habilitação: ").toUpperCase()
+            if (categoria == 'A') {
+                document.write("<h1>" , nome, ", a sua habilitação permite que você dirija motos e triciclos." , "</h1>")
+            }
+            else if (categoria == 'B') {
+                document.write("<h1>" , nome, ", a sua habilitação permite que você dirija carros de passeio." , "</h1>")
+            }
+            else if (categoria == 'C') {
+                document.write("<h1>" , nome, ", a sua habilitação permite que você dirija veículos de carga acima de 3,5 toneladas." , "</h1>")
+            }
+            else if (categoria == 'D') {
+                document.write("<h1>" , nome, ", a sua habilitação permite que você dirija veículos com mais de 8 passageiros." , "</h1>")
+            }
+            else if (categoria == 'E') {
+                document.write("<h1>" , nome, ", a sua habilitação permite que você dirija veículos com unidade acoplada acima de 6 toneladas." , "</h1>")
+            }
+            else {
+                document.write("<h1>" , "Valor inválido." , "</h1>")
+            }
+        }
+        categoriaHab()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

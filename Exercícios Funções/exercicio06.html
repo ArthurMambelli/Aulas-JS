@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Horário do Dia</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function mensHora(){
+            nome = prompt("Digite seu nome: ")
+            hora = parseFloat(prompt("Digite o horário com . ao invés de : Ex: 14.30")).toFixed(2)
+            if (hora >= 6 && hora < 13){
+                document.write("<p>" + "Bom dia, " + nome)
+            }
+            else if (hora >= 13 && hora < 18){
+                document.write("<p>" + "Boa tarde, " + nome)
+            }
+            else if (hora >= 18 && hora <= 23.59){
+                document.write("<p>" + "Boa noite, " + nome)
+            }
+            else if (hora >= 0 && hora < 6) {
+                document.write("<p>" + "Durma bem, " + nome)
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="mensHora()">Gerar Mensagem</button>
+</body>
+</html>

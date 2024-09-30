@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Operações Matemáticas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+    <style>
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            padding: 12px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="submitButton">Realizar operações</button>
+
+    <script>
+        function realizarOpc() {
+            let num1 = prompt("Digite o primeiro número:")
+            let num2 = prompt("Digite o segundo número:")
+
+            let soma = Number(num1) + Number(num2)
+
+            let sub = Number(num1) - Number(num2)
+
+            let mult = Number(num1) * Number(num2)
+
+            let div = Number(num1) / Number(num2)
+
+            let porcSoma = soma * 0.252
+
+            let media = (Number(num1) + Number(num2)) / 2
+
+            let quadSoma = soma ** 2
+
+            let raizSoma = soma ** 0.5
+
+            document.write("<p>" + "A) Soma: " + num1 + " + " + num2 + " = " + soma + "</p>")
+            document.write("<p>" + "B) Subtração: " + num1 + " - " + num2 + " = " + sub + "</p>")
+            document.write("<p>" + "C) Multiplicação: " + num1 + " x " + num2 + " = " + mult + "</p>")
+            document.write("<p>" + "D) Divisão: " + num1 + " / " + num2 + " = " + div + "</p>")
+            document.write("<p>" + "E) 25,2% da soma: " + porcSoma + "</p>")
+            document.write("<p>" + "F) Média: " + media + "</p>")
+            document.write("<p>" + "G) Quadrado da soma: " + soma + "^2 = " + quadSoma + "</p>")
+            document.write("<p>" + "H) Raiz quadrada da soma: " + soma + "^0.5 = " + raizSoma + "</p>")
+        }
+
+        document.getElementById("submitButton").addEventListener("click", function(){
+            realizarOpc();
+        });
+    </script>
+</body>
+</html>

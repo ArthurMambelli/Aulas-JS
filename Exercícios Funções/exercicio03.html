@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Conversor de Celsius para Fahrenheit</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #convertCelsius{
+            border: none;
+            border-radius: 10px;
+            background-color: aqua;
+            padding: 15px;
+            cursor: pointer;
+        }
+        #convertFahrenheit{
+            border: none;
+            border-radius: 10px;
+            background-color: pink;
+            padding: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="convertCelsius" onclick="convertCel()">Converter para Celsius</button>
+    <button id="convertFahrenheit" onclick="convertFah()">Converter para Fahrenheit</button>
+    <script>
+        function convertCel() {
+            let temp = parseFloat(prompt("Digite a temperatura em graus Fahrenheit para converter para Celsius: "))
+            let convert = (temp - 32) * 5 / 9
+            document.write("<p>" + temp + "°F = " + convert.toFixed(2).replace('.', ',') + "°C" + "</p>")
+        }
+        function convertFah() {
+            let temp = parseFloat(prompt("Digite a temperatura em graus Celsius para converter para Fahrenheit: "))
+            let convert = (temp * 9/5 ) + 32
+            document.write("<p>" + temp + "°C = " + convert.toFixed(2).replace('.', ',') + "°F" + "</p>")
+        }
+    
+    </script>
+</body>
+</html>
