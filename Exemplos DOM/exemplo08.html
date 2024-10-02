@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exemplo 08</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            font-family: verdana;
+            font-size: 24px;
+    }
+    </style>
+</head>
+<body>
+    <p>Clique no botão para exibir a largura e a altura internas da janela:</p>
+    <button onclick="myFunction()">Tente</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Largura interna da janela " + window.innerWidth + "<br>Altura interna da janela: " + window.innerHeight;
+        }
+    </script>
+</body>
+</html>
