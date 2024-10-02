@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .minhaClasse {
+            color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p class="minhaClasse">Este é o meu parágrafo</p>
+    <button id="meuBotao" onclick="mudarCor()">Mudar cor</button>
+
+    <script>
+        var cores = ["red", "green", "yellow", "pink", "gray", "blue"];
+        var indiceCor = 0; // Índice da cor atual no array de cores
+
+        function mudarCor() {
+            // Acessa o elemento pelo seu seletor CSS
+            var p = document.querySelector(".minhaClasse");
+
+            // Altera a cor do texto do elemento
+            p.style.color = cores[indiceCor];
+
+            // Atualiza o índice da cor para a próxima cor no array de cores
+            indiceCor = (indiceCor + 1) % cores.length;
+        }
+    </script>
+</body>
+</html>

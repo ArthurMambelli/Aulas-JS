@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="meuBotao" onclick="adicionarParagrafo()">Adicionar parágrafo</button>
+
+    <script>
+        function adicionarParagrafo() {
+            // Cria um novo elemento p
+            var p = document.createElement("p");
+
+            // Define o conteúdo do elemento
+            p.textContent = "Este é um novo parágrafo!"
+
+            // Adiciona o elemento à página, como último filho do elemento body
+            document.body.appendChild(p);
+        }
+    </script>
+</body>
+</html>

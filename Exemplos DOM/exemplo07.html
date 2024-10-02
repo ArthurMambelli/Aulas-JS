@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p class="meuParagrafo">Este é o meu parágrafo 1.</p>
+    <p class="meuParagrafo">Este é o meu parágrafo 2.</p>
+    <button id="meuBotao" onclick="mudarTexto()">Clique aqui!</button>
+
+    <script>
+        function mudarTexto() {
+            // Acessa os elmentos pelo seu seletor CSS
+            var ps = document.querySelectorAll(".meuParagrafo");
+
+            // Altera o conteúdo, a cor e a font dos elementos
+            for (var i = 0; i < ps.length; i++) {
+                ps[i].textContent = "Novo conteúdo do parágrafo " + (i + 1) + "!";
+                ps[i].style.color = "red";
+                ps[i].style.fontFamily = "Verdana";
+            }
+        }
+    </script>
+</body>
+</html>

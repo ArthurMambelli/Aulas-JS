@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aplicando o DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/exercicio01.css'>
+    <script src='_js/exercicio01.js'></script>
+</head>
+<body>
+    <p id="meuParagrafo">Este é o parágrafo 1.</p>
+    <button onclick="mudarTexto()">Clique para mudar o texto</button>
+    <br> <br> <hr>
+
+    <div id="addPar">
+        <p>Clique para adicionar um parágrafo</p>
+        <button onclick="adicionarParagrafo()">Adicionar Parágrafo</button>
+        <br> <br> <hr>
+    </div>
+    
+
+    <div id="addText">
+        <p>Clique para adicionar texto</p>
+        <button onclick="adicionarTexto()">Adicionar Texto</button>
+        <br> <br> <hr>
+    </div>
+    
+    <p>Mostrar Input pelo Name</p>
+    <input type="text" name="meuInput"><br> <br>
+    <button id="meuBotao" onclick="mostrarValorName()">Mostrar Input pelo Name</button>
+    <p id="resultado"></p>
+    <hr>
+
+    <p>Mostrar Input pelo ID</p>
+    <input type="text" id="meuInput"><br> <br>
+    <button id="meuBotao" onclick="mostrarValorId()">Mostrar Input pelo ID</button>
+    <p id="resultadoid"></p>
+    <hr>
+
+    <button id="darkButton" onclick="darkMode()">Modo Escuro</button>
+    <button id="lightButton" onclick="lightMode()">Modo claro</button>
+</body>
+</html>

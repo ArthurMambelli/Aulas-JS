@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tabela zebra</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .zebraon {
+            background: silver;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var zebrar = document.querySelectorAll(".zebra tbody tr");
+            for (var i = 0; i < zebrar.length; i += 2){
+                zebrar[i].className = "zebraon";
+            }
+        }
+    </script>
+</head>
+<body>
+    <table class="zebra">
+        <thead>
+            <tr>
+                <th>Vendedor</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manoel</td>
+                <td>12.300,00</td>
+            </tr>
+            <tr>
+                <td>Joaquim</td>
+                <td>21.300,00</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>13.200,00</td>
+            </tr>
+            <tr>
+                <td>Marta</td>
+                <td>32.100,00</td>
+            </tr>
+            <tr>
+                <td>Antonio</td>
+                <td>23.100,00</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>31.200,00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
