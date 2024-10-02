@@ -13,7 +13,7 @@
         button{
             border: 1px solid black;
             border-radius: 10px;
-            background-color: aqua;
+            background-color: rgb(142, 213, 251);
             padding: 12px;
             cursor: pointer;
         }
@@ -29,8 +29,17 @@
             let delta = (b**2) - (4*a*c)
             let x1 = ((b * -1) + (delta ** 0.5)) / (2*a)
             let x2 = ((b * -1) - (delta ** 0.5)) / (2*a)
-            document.write("<p>" + "O valor de x1 é: " + x1 + "</p>")
-            document.write("<p>" + "O valor de x2 é: " + x2 + "</p>")
+            if (delta < 0){
+                document.write("A equação não possui raízes reais.")
+            }
+            else if (delta > 0) {
+                document.write("<p>" + "O valor de x1 é: " + x1 + "</p>")
+                document.write("<p>" + "O valor de x2 é: " + x2 + "</p>")
+            }
+            else if (delta == 0) {
+                document.write("<p>" + "Delta = 0, então, a equação tem apenas uma raiz real.")
+                document.write("<p>" + "O valor de x1 e x2 é: " + x1 + "</p>")
+            }  
         }
     </script>
 </body>
