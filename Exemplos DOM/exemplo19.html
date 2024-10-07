@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Zoom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .image-container {
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-container img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.2); /* Aumenta a escala para dar efeito de zoom*/
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="http://cm1.narvii.com/7220/93f9aacf2cb432ed309b93ba677313df0db9a365_00.jpg" 
+        alt="Image" 
+        onmouseover="zoomIn(this)"
+        onmouseout="zoomOut(this)"
+        />
+ 
+    </div>
+</body>
+</html>

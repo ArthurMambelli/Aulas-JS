@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <label for="input">Insira um valor:</label>
+    <input type="text" name="" id="input">
+    <p id="output"></p>
+    <script>
+        let input = document.getElementById("input");
+        let output = document.getElementById("output");
+        function handleInput(event){
+            output.innerHTML = "Valor inserido: " + event.target.value;
+        }
+        input.addEventListener("input", handleInput)
+    </script>
+</body>
+</html>

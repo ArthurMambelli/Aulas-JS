@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p id="myP">Passe o mouse sobre este parágrafo</p>
+    <p id="output"></p>
+    <script>
+        let myP = document.getElementById("myP");
+        let output = document.getElementById("output");
+        myP.onmouseover = function() {
+            output.innerHTML = "Voce passou o mouse sobre o parágrafo!";
+            myP.style.cursor = "pointer"
+        }
+        myP.onmouseout = function() {
+            output.innerHTML = "";
+        }
+        
+    </script>
+</body>
+</html>

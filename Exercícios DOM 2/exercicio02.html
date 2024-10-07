@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Galeria de Animais</h1>
+    <br>
+    <h3>Clique no botão para ver a imagem</h3>
+    <br>
+    <br>
+    <div>
+        <figure>
+            <div class="image-container">
+                <img src="_img/gato.jpg" alt="" id="img1" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            </div>
+            <br>
+            <figcaption>
+                <button onclick="verGatos()" id="botaoGato">Clique para visualizar Gatos</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+            <img src="_img/Bile-Ermindo.jpg" alt="" id="img2" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            </div>
+            <br>
+            <figcaption>
+                <button onclick="verCachorros()" id="botaoCachorro">Clique para visualizar Cachorros</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+            <img src="_img/chico.jpg" alt="" id="img3" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            </div>
+            <br>
+            <figcaption>
+                <button onclick="verPassaros()" id="botaoPassaro">Clique para visualizar Pássaros</button>
+            </figcaption>
+        </figure>
+    </div>
+    <script src="_js/main.js"></script>  
+</body>
+</html>
