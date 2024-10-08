@@ -5,12 +5,12 @@ function validarFormulario(){
     const nome = document.getElementById("nome").value;    
     const email = document.getElementById("email").value;    
 
-    if (!nomeRegesx.test(nome)) {
+    if (!nomeRegex.test(nome)) {
         alert ("Nome inválido. Use apenas letras e espaços.");
         return false;
     }
 
-    if (!emailRegesx.test(email)) {
+    if (!emailRegex.test(email)) {
         alert ("E-mail inválido. Insira um e-mail válido.");
         return false;
     }
