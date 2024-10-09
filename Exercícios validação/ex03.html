@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro de filmes/séries</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/ex03.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="action_page3.html" method="get">
+        <h1>Cadastro de filmes/séries</h1>
+        <label for="codigo">Código do filme/série:</label> <br>
+        <input type="number" id="codigo" placeholder="Digite o Código" required>
+        <br> <br>
+        <label for="titulo">Título do filme/série:</label> <br>
+        <input type="text" id="titulo" placeholder="Digite o Título" required>
+        <br> <br>
+        <label for="produtor">Nome do Produtor:</label> <br>
+        <input type="text" id="produtor" placeholder="Digite o Nome do Produtor" required>
+        <br> <br>
+        <label for="ano">Ano de Lançamento:</label> <br>
+        <input type="number" id="ano" placeholder="Digite o Ano de Lançamento" required>
+        <br> <br>
+        <label for="tipo">Tipo do filme/série:</label> <br>
+        <input type="text" id="tipo" placeholder="Digite o Gênero" required>
+        <br> <br>
+        <label for="classificacao">Classificação Indicativa:</label> <br>
+        <select name="" id="classificacao">
+            <option value="Livre">Livre</option>
+            <option value="10anos">10 anos</option>
+            <option value="12anos">12 anos</option>
+            <option value="14anos">14 anos</option>
+            <option value="16anos">16 anos</option>
+            <option value="18anos">18 anos</option>
+        </select>
+        <br> <br>
+        <label for="duracao">Duração do filme/série:</label> <br>
+        <input type="text" id="duracao" placeholder="Digite a Duração" required>
+        <br> <br>
+        <label for="comentarios">Digite seus comentários sobre o filme:</label> <br>
+        <textarea name="" id="comentarios" placeholder="Digite aqui..." required></textarea>
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+    
+</body>
+</html>
