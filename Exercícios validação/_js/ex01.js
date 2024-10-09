@@ -1,5 +1,4 @@
 function validarFormulario(){
-    const cpfRegex = /([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     /*^(([\\d]{3})([\\.])([\\d]{3})([\\.])([\\d]{3})([\\-])([\\d]{2}))$"*/ 
 
@@ -10,7 +9,7 @@ function validarFormulario(){
     const email = document.getElementById("email").value;      
 
     if (!cpfRegex.test(cpf)) {
-        alert ("Cpf inválido. Utilize pontos e hífen ao digitar.");
+        alert ("Cpf inválido. Insira apenas números.");
         return false;
     }
 
