@@ -1,0 +1,25 @@
+{
+    "Usuario1": [
+        {
+            "Nome: ": "José Silva",
+            "Idade: ": 27,
+            "Endereço -> ": "Rua Voorhees",
+            "Cidade: ": "Mirassol",
+            "Filhos: ": ["Joana", "João"]
+        },
+        {
+            "Nome: ": "Antônio Prado",
+            "Idade: ": 50,
+            "Endereço -> ": "Rua Friday",
+            "Cidade: ": "Tanabi",
+            "Filhos: ": ["Maurício"]
+        },
+        {
+            "Nome: ": "Geisa Pereira",
+            "Idade: ": 30,
+            "Endereço -> ": "Rua: LastDream",
+            "Cidade: ": "São Paulo",
+            "Filhos: ": ["Thiago"]
+        }
+    ]
+}

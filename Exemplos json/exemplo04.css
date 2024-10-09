@@ -1,0 +1,14 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+div{
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+}

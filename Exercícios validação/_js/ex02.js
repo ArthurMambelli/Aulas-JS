@@ -1,6 +1,5 @@
 function validarFormulario(){
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    /*^(([\\d]{3})([\\.])([\\d]{3})([\\.])([\\d]{3})([\\-])([\\d]{2}))$"*/ 
     const email = document.getElementById("email").value; 
 
     var nome = document.getElementById("nome").value;   
@@ -24,3 +23,4 @@ function validarFormulario(){
 
     return true;
 }
+ /*^(([\\d]{3})([\\.])([\\d]{3})([\\.])([\\d]{3})([\\-])([\\d]{2}))$"*/ 

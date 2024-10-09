@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exemplo 03</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dados do Arquivo ex01.json</h1>
+    <pre id="output"></pre>
+    <button onclick="getData()">Obter Dados</button>
+    <script>
+        function getData(){
+            fetch('ex01.json')
+            .then(response => response.json())
+            .then(data => {
+            document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+        });
+}
+    </script>
+</body>
+</html>
