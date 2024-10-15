@@ -1,8 +1,8 @@
-function verificarSenha(){
-    const nomeRegex = /^([a-zA-Z]?\s?){0,}$/
-    var nome = document.getElementById("produtor").value;
-    if (!nomeRegex.test(nome)){
-        alert("O nome deve conter apenas letras e espaços.")
+function validarForm(){
+    const produtorRegex = /^([a-zA-Z]?\s?){0,}$/
+    const produtor = document.getElementById("produtor").value;
+    if (!produtorRegex.test(produtor)){
+        alert("O nome do produtor deve conter apenas letras e espaços.")
         return false
     }
     return true;

@@ -6,10 +6,10 @@
     <title>Cadastro de filmes/séries</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='_css/ex03.css'>
-    <script src='main.js'></script>
+    <script src='_js/ex03.js'></script>
 </head>
 <body>
-    <form action="action_page3.html" method="get">
+    <form action="action_page3.html" method="get" onsubmit="return validarForm()">
         <h1>Cadastro de filmes/séries</h1>
         <label for="codigo">Código do filme/série:</label> <br>
         <input type="number" id="codigo" placeholder="Digite o Código" required>
@@ -21,7 +21,7 @@
         <input type="text" id="produtor" placeholder="Digite o Nome do Produtor" required>
         <br> <br>
         <label for="ano">Ano de Lançamento:</label> <br>
-        <input type="number" id="ano" placeholder="Digite o Ano de Lançamento" required>
+        <input type="text" id="ano" placeholder="Digite o Ano de Lançamento" minlength="4" maxlength="4" required>
         <br> <br>
         <label for="tipo">Tipo do filme/série:</label> <br>
         <input type="text" id="tipo" placeholder="Digite o Gênero" required>

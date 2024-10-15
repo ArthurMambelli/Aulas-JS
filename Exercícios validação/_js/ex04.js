@@ -1,6 +1,17 @@
 function verificarSenha(){
     const nomeRegex = /^([a-zA-Z]?\s?){0,}$/
-    var nome = document.getElementById("nome").value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const email = document.getElementById("email").value;
+    const login = document.getElementById("login").value;
+    const nome = document.getElementById("nome").value;
+    if(login.search( /\s/g ) != -1 ){
+        alert("Login inválido. Não digite espaços.")
+        return false
+    }
+    if (!emailRegex.test(email)) {
+        alert ("E-mail inválido. Insira um e-mail válido.");
+        return false;
+    }
     if (!nomeRegex.test(nome)){
         alert("O nome deve conter apenas letras e espaços.")
         return false

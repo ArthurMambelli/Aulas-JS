@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dados do Formulário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/style.css'>
+    <style>
+        h1{
+            background-color: #8b008b;
+            color: gold;
+            text-align: center;
+            border-style: dotted;
+            padding: 8px;
+            border-radius: 10px;
+        }
+        body{
+            display: grid;
+            place-items: center;
+        }
+        div{
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            border: 1px solid gold;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dados do Formulário: SuperAçaiajin</h1>
+    <div id="dadosDiv"></div>
+    <script>
+        function mostrarDados(){
+            var dados = JSON.parse(localStorage.getItem('dados'))
+
+            var dadosDiv = document.getElementById('dadosDiv')
+            dadosDiv.innerHTML = `
+            <p><b>Nome:</b> ${dados.nome}</p>
+            <p><b>Idade:</b> ${dados.idade}</p>
+            <p><b>Telefone:</b> ${dados.telefone}</p>
+            <p><b>Endereço:</b> ${dados.endereco}</p>
+            <p><b>Planeta:</b> ${dados.planeta}</p>
+            <p><b>Trabalho:</b> ${dados.trabalho}</p>
+            <p><b>Complemento:</b> ${dados.complemento}</p>
+            <p><b>Tamanho:</b> ${dados.tamanho}</p>
+            <p><b>Observação:</b> ${dados.observacao}</p>
+            `
+        }
+        mostrarDados()
+    </script>
+</body>
+</html>

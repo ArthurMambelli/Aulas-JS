@@ -1,8 +1,13 @@
 function validarFormulario(){
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const nomeRegex = /^([a-zA-Z]?\s?){0,}$/
+    const nome = document.getElementById("nome").value;  
     const email = document.getElementById("email").value; 
 
-    var nome = document.getElementById("nome").value;   
+    if (!nomeRegex.test(nome)){
+        alert("O nome deve conter apenas letras e espaços.")
+        return false
+    }
     if (nome.length < 3){
         alert("Nome muito curto.");
         return false;
@@ -11,10 +16,7 @@ function validarFormulario(){
     if (chuteira > 49 || chuteira < 34){
         alert("Número de chuteira inválido. Tente novamente.");
         return false;
-    }
-
-    const endereco = document.getElementById("endereco").value;    
-    const cidade = document.getElementById("cidade").value;          
+    }         
 
     if (!emailRegex.test(email)) {
         alert ("E-mail inválido. Insira um e-mail válido.");
@@ -23,4 +25,3 @@ function validarFormulario(){
 
     return true;
 }
- /*^(([\\d]{3})([\\.])([\\d]{3})([\\.])([\\d]{3})([\\-])([\\d]{2}))$"*/ 
