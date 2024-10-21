@@ -1,25 +1,25 @@
 {
-    "Usuario1": [
+    "usuarios": [
         {
-            "Nome: ": "José Silva",
-            "Idade: ": 27,
-            "Endereço -> ": "Rua Voorhees",
-            "Cidade: ": "Mirassol",
-            "Filhos: ": ["Joana", "João"]
+            "nome": "José Silva",
+            "idade": 27,
+            "endereco": "Rua Voorhees",
+            "cidade": "Mirassol",
+            "filhos": ["Joana", "João"]
         },
         {
-            "Nome: ": "Antônio Prado",
-            "Idade: ": 50,
-            "Endereço -> ": "Rua Friday",
-            "Cidade: ": "Tanabi",
-            "Filhos: ": ["Maurício"]
+            "nome": "Antônio Prado",
+            "idade": 50,
+            "endereco": "Rua Friday",
+            "cidade": "Tanabi",
+            "filhos": ["Maurício"]
         },
         {
-            "Nome: ": "Geisa Pereira",
-            "Idade: ": 30,
-            "Endereço -> ": "Rua: LastDream",
-            "Cidade: ": "São Paulo",
-            "Filhos: ": ["Thiago"]
+            "nome": "Geisa Pereira",
+            "idade": 30,
+            "endereco": "Rua: LastDream",
+            "cidade": "São Paulo",
+            "filhos": ["Thiago"]
         }
     ]
 }

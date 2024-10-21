@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Valida Json</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+        button{ 
+            padding: 7px;
+            cursor: pointer;
+            margin-right: 10px;
+            border: 1px solid rgb(76, 74, 74);
+        }
+        #btn1 {
+            background-color: rgb(152, 203, 254);
+        }
+        #btn2 {
+            background-color: rgb(174, 248, 188);
+        }
+        #btn3 {
+            background-color: rgb(239, 107, 107);
+        }
+    </style>
+</head>
+<body>
+    <h1>Dados do Arquivo ex01.json</h1>
+    <button id="btn1" onclick="getData1()">Dados do Usuário 1</button>
+    <button id="btn2" onclick="getData2()">Dados do Usuário 2</button>
+    <button id="btn3" onclick="getData3()">Dados do Usuário 3</button>
+    <pre id="output"></pre>
+    <script>
+        function getData1() {
+            fetch('ex01.json') 
+                .then(response => response.json()) 
+                .then(data => { 
+                    var nome = "<p><b>Nome: </b>" + data.usuarios[0].nome + "</p>"
+                    var idade = "<p><b>Idade: </b>" + data.usuarios[0].idade + "</p>"
+                    var endereco = "<p><b>Endereço: </b>" + data.usuarios[0].endereco + "</p>"
+                    var cidade = "<p><b>Cidade: </b>" + data.usuarios[0].cidade + "</p>"
+                    var filhos = "<p><b>Filhos: </b>" + data.usuarios[0].filhos.join(", ") + "</p>"
+
+                    document.getElementById('output').innerHTML = nome + idade + endereco + cidade + filhos
+                })
+        }
+        function getData2() {
+            fetch('ex01.json') 
+                .then(response => response.json()) 
+                .then(data => { 
+                    var nome = "<p><b>Nome: </b>" + data.usuarios[1].nome + "</p>"
+                    var idade = "<p><b>Idade: </b>" + data.usuarios[1].idade + "</p>"
+                    var endereco = "<p><b>Endereço: </b>" + data.usuarios[1].endereco + "</p>"
+                    var cidade = "<p><b>Cidade: </b>" + data.usuarios[1].cidade + "</p>"
+                    var filhos = "<p><b>Filhos: </b>" + data.usuarios[1].filhos.join(", ") + "</p>"
+
+                    document.getElementById('output').innerHTML = nome + idade + endereco + cidade + filhos
+                })
+        }
+        function getData3() {
+            fetch('ex01.json') 
+                .then(response => response.json()) 
+                .then(data => { 
+                    var nome = "<p><b>Nome: </b>" + data.usuarios[2].nome + "</p>"
+                    var idade = "<p><b>Idade: </b>" + data.usuarios[2].idade + "</p>"
+                    var endereco = "<p><b>Endereço: </b>" + data.usuarios[2].endereco + "</p>"
+                    var cidade = "<p><b>Cidade: </b>" + data.usuarios[2].cidade + "</p>"
+                    var filhos = "<p><b>Filhos: </b>" + data.usuarios[2].filhos.join(", ") + "</p>"
+
+                    document.getElementById('output').innerHTML = nome + idade + endereco + cidade + filhos
+                })
+        }
+        
+
+    </script>
+</body>
+</html>
